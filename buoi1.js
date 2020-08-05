@@ -29,6 +29,8 @@
 // }
 // console.log(teo['address'] , teo['age'])
 
+// th3 : Khi phương thức không return
+
 // 3 : Khai báo object
 // var teo = {
 //     name : "Nguyen Văn Tèo",
@@ -41,10 +43,10 @@
 // console.log(arrayNames[6])
 
 // 5 : Arithmetic Operators
-var a = 5
-var b = 6
+// var a = 5
+// var b = 6
 
-var c = ++a - --b + b++ - --b + ++a - ++a - ++b + a++
+// var c = ++a - --b + b++ - --b + ++a - ++a - ++b + a++
 // 6 - --b + b++ - --b + ++a - ++a - ++b + a++  (a = 6 , b = 6)
 // 6 - 5 + b++ - --b + ++a - ++a - ++b + a++  (a = 6 , b = 5)
 // 6 - 5 + b++ - --b + ++a - ++a - ++b + a++  (a = 6 , b = 5)
@@ -57,3 +59,26 @@ var c = ++a - --b + b++ - --b + ++a - ++a - ++b + a++
 
 
 // ket qua ?
+// var name = ""
+//6 : function
+// function setName(name1){
+//     name = name1
+//     return
+// }
+// console.log(setName("Phạm tấn phát"))
+
+// 7 : Object method
+// var teo = {
+//     name : "Nguyen Văn Tèo",
+//     age : 20,
+//     showName : function(){
+//         console.log(this.name)
+//     }
+// }
+
+// teo.showName()
+
+//8 : Phép so sánh
+// var a = 5
+// var b = "5"
+// console.log(a === b)
