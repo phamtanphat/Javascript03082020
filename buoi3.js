@@ -18,3 +18,32 @@ console.log(array)
 // function inSoLe
 // function inSoChia3du1
 // function inSoChinhPhuong (Lấy căn bậc 2)
+
+function inSoChan(){
+    for (var index = 1; index < 100; index++) {
+        if (index % 2 === 0) {
+            console.log(index)
+        }
+    }
+}
+function inSoLe(){
+    for (var index = 1; index < 100; index++) {
+        if (index % 2 === 1) {
+            console.log(index)
+        }
+    }
+}
+function inSoChia3Du1(){
+    for (var index = 1; index < 100; index++) {
+        if (index % 3 === 1) {
+            console.log(index)
+        }
+    }
+}
+function inSoChinhPhuong(){
+    for (var index = 1; index < 100; index++) {
+        if (Math.sqrt(index) % 1 === 0) {
+            console.log(index)
+        }
+    }
+}
