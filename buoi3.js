@@ -49,15 +49,29 @@
 //         }
 //     }
 // }
-function inSoTheoDieuKien(callback){
-    for (var index = 1; index <= 100; index++) {
-        const dk = callback(index)
-        if(dk){
-            console.log(index)
-        }
-    }
-}
-inSoTheoDieuKien(function(index){
-    if(Math.sqrt(index) % 1 === 0) return true
-    return false
+// function inSoTheoDieuKien(callback){
+//     for (var index = 1; index <= 100; index++) {
+//         const dk = callback(index)
+//         if(dk){
+//             console.log(index)
+//         }
+//     }
+// }
+// inSoTheoDieuKien(function(index){
+//     if(Math.sqrt(index) % 1 === 0) return true
+//     return false
+// })
+
+
+// 12 :  Hàm map
+const arrayNums = [1,2,3,4,5]
+
+// for (var index = 0; index < arrayNums.length; index++) {
+//     arrayNums[index] = arrayNums[index] * 2
+// }
+// console.log(arrayNums)
+
+const newArrayNums = arrayNums.map(function(value , index){
+    return value * 2
 })
+console.log(newArrayNums)
