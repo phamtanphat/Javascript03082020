@@ -99,5 +99,5 @@ const numbers = [5,1,2,3,4]
 // Xóa ở giữa
 // numbers.splice(1,2)
 // Thêm ở giữa
-numbers.splice(-1,0,10)
-console.log(numbers)
+// numbers.splice(-1,0,10)
+// console.log(numbers)
