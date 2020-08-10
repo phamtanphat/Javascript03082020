@@ -64,14 +64,57 @@
 
 
 // 12 :  Hàm map
-const arrayNums = [1,2,3,4,5]
+// const arrayNums = [1,2,3,4,5]
 
 // for (var index = 0; index < arrayNums.length; index++) {
 //     arrayNums[index] = arrayNums[index] * 2
 // }
 // console.log(arrayNums)
 
-const newArrayNums = arrayNums.map(function(value , index){
-    return value * 2
-})
-console.log(newArrayNums)
+// const newArrayNums = arrayNums.map(function(value , index){
+//     return value * 2
+// })
+// console.log(newArrayNums)
+
+// Ví dụ
+// Make an array of strings of the names
+
+
+Array.prototype.myMap = function(callback){
+    const newArr = []
+    for (var index = 0; index < this.length; index++) {
+        newArr.push(callback(this[index], index))
+    }
+    return newArr
+}
+
+function namesOnly(arr) {
+    const newArr = arr.myMap(function(person , index){
+        return person.name
+    })
+    console.log(newArr)
+}
+
+namesOnly([
+  {
+    name: "Angelina Jolie",
+    age: 80
+  },
+  {
+    name: "Eric Jones",
+    age: 2
+  },
+  {
+    name: "Paris Hilton",
+    age: 5
+  },
+  {
+    name: "Kayne West",
+    age: 16
+  },
+  {
+    name: "Bob Ziroll",
+    age: 100
+  }
+])
+// ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
