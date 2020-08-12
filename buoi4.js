@@ -64,19 +64,42 @@
 // 15 : declaration class
 
 // function constructor
-function Person(name , age){
-    this.name = name;
-    this.age = age;
-    this.printName = function(){
-        console.log(name)
+// function Person(name , age){
+//     this.name = name;
+//     this.age = age;
+//     this.printName = function(){
+//         console.log(name)
+//     }
+// }
+// Person.prototype.address = null;
+// Person.prototype.printAge = function(){
+//     return this.age
+// };
+
+// const teo = new Person("Nguyen Van Teo",20)
+
+// const ti = new Person("Nguyen Van Ti",22)
+// console.log(ti.printAge == teo.printAge)
+
+// 16 : class
+class Person {
+    constructor(name , age){
+        this.name = name
+        this.age = age
+    }
+    showName(){
+        console.log(this.name)
     }
 }
-Person.prototype.address = null;
-Person.prototype.printAge = function(){
-    return this.age
-};
-
+class Nhanvien extends Person{
+    constructor(name , age , address){
+        super(name ,age)
+        this.address = address
+    }
+    showName(){
+        console.log("Ten nhan vien " + this.name)
+    }
+}
 const teo = new Person("Nguyen Van Teo",20)
-
-const ti = new Person("Nguyen Van Ti",22)
-console.log(ti.printAge == teo.printAge)
+const nhanviena = new Nhanvien("Nguyen Van A",20 , "Quan 1")
+nhanviena.showName()
