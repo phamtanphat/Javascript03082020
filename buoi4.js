@@ -28,3 +28,16 @@
 //   {name: 'Zack', age: 19, voted: false}
 // ];
 // totalVotes(voters) // 7
+
+function countOccurrences(arr) {
+    return arr.reduce((total, cur) => {
+      if (total[cur]){
+          total[cur] += 1
+      }else{
+          total[cur] = 1
+      }
+      return total
+    }, {});
+  }
+console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]));
+// {a : 3 , b : 2 , c : 1}
