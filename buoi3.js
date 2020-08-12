@@ -80,41 +80,54 @@
 // Make an array of strings of the names
 
 
-Array.prototype.myMap = function(callback){
-    const newArr = []
-    for (var index = 0; index < this.length; index++) {
-        newArr.push(callback(this[index], index))
-    }
-    return newArr
-}
+// Array.prototype.myMap = function(callback){
+//     const newArr = []
+//     for (var index = 0; index < this.length; index++) {
+//         newArr.push(callback(this[index], index))
+//     }
+//     return newArr
+// }
 
-function namesOnly(arr) {
-    const newArr = arr.myMap(function(person , index){
-        return person.name
-    })
-    console.log(newArr)
-}
+// function namesOnly(arr) {
+//     const newArr = arr.myMap(function(person , index){
+//         return person.name
+//     })
+//     console.log(newArr)
+// }
 
-namesOnly([
-  {
-    name: "Angelina Jolie",
-    age: 80
-  },
-  {
-    name: "Eric Jones",
-    age: 2
-  },
-  {
-    name: "Paris Hilton",
-    age: 5
-  },
-  {
-    name: "Kayne West",
-    age: 16
-  },
-  {
-    name: "Bob Ziroll",
-    age: 100
-  }
-])
+// namesOnly([
+//   {
+//     name: "Angelina Jolie",
+//     age: 80
+//   },
+//   {
+//     name: "Eric Jones",
+//     age: 2
+//   },
+//   {
+//     name: "Paris Hilton",
+//     age: 5
+//   },
+//   {
+//     name: "Kayne West",
+//     age: 16
+//   },
+//   {
+//     name: "Bob Ziroll",
+//     age: 100
+//   }
+// ])
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
+
+// 13 : Hàm filter
+// const arrayPerson = [
+//     {name : 'Teo', age : 5},
+//     {name : 'Ti', age : 6},
+//     {name : 'Tun', age : 7},
+//     {name : 'Tuan', age : 8},
+// ]
+// const newArrayPerson = arrayPerson.filter(function(person , index){
+//     if (person.age > 5) return true
+//     return false
+// })
+// console.log(newArrayPerson)
