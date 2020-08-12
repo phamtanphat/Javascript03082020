@@ -29,15 +29,34 @@
 // ];
 // totalVotes(voters) // 7
 
-function countOccurrences(arr) {
-    return arr.reduce((total, cur) => {
-      if (total[cur]){
-          total[cur] += 1
-      }else{
-          total[cur] = 1
-      }
-      return total
-    }, {});
-  }
-console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]));
+// function countOccurrences(arr) {
+//     return arr.reduce((total, cur) => {
+//       if (total[cur]){
+//           total[cur] += 1
+//       }else{
+//           total[cur] = 1
+//       }
+//       return total
+//     }, {});
+//   }
+// console.log(countOccurrences(["a", "b", "c", "b", "a", "a"]));
 // {a : 3 , b : 2 , c : 1}
+
+
+//14 : Ham sort
+// const arrNums = [5,4,11,1,0,10,2,20,12,22]
+// // a > b
+// // lon den be
+// arrNums.sort(function(a , b){
+//     return b - a
+// })
+// console.log(arrNums)
+// // be den lon
+// arrNums.sort(function(a , b){
+//     return a - b
+// })
+// console.log(arrNums)
+// const arrNames = ["Teo","An","Hoa","Ngoc","Hung"]
+// const arrNums = [5,4,11,1,0,10,2,20,12,22]
+// arrNums.sort()
+// console.log(arrNums)
