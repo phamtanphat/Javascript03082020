@@ -82,24 +82,50 @@
 // console.log(ti.printAge == teo.printAge)
 
 // 16 : class
-class Person {
-    constructor(name , age){
-        this.name = name
-        this.age = age
-    }
-    showName(){
-        console.log(this.name)
+// class Person {
+//     constructor(name , age){
+//         this.name = name
+//         this.age = age
+//     }
+//     showName(){
+//         console.log(this.name)
+//     }
+// }
+// class Nhanvien extends Person{
+//     constructor(name , age , address){
+//         super(name ,age)
+//         this.address = address
+//     }
+//     showName(){
+//         console.log("Ten nhan vien " + this.name)
+//     }
+// }
+// const teo = new Person("Nguyen Van Teo",20)
+// const nhanviena = new Nhanvien("Nguyen Van A",20 , "Quan 1")
+// nhanviena.showName()
+
+// 17 : function scope
+
+
+// function random() {
+//     this.a = 10
+//     const b = function(){
+//         const c = function () {
+//             console.log(this.a)
+//         }
+//         c()
+//     }
+//     b()
+// }
+
+const teo ={
+    age : 10,
+    name : "Nguyen Van Teo",
+    showName : function(){
+        const b = function(){
+            console.log(this.name)
+        }
+        b()
     }
 }
-class Nhanvien extends Person{
-    constructor(name , age , address){
-        super(name ,age)
-        this.address = address
-    }
-    showName(){
-        console.log("Ten nhan vien " + this.name)
-    }
-}
-const teo = new Person("Nguyen Van Teo",20)
-const nhanviena = new Nhanvien("Nguyen Van A",20 , "Quan 1")
-nhanviena.showName()
+teo.showName()
