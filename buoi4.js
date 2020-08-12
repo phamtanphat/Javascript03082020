@@ -60,3 +60,23 @@
 // const arrNums = [5,4,11,1,0,10,2,20,12,22]
 // arrNums.sort()
 // console.log(arrNums)
+
+// 15 : declaration class
+
+// function constructor
+function Person(name , age){
+    this.name = name;
+    this.age = age;
+    this.printName = function(){
+        console.log(name)
+    }
+}
+Person.prototype.address = null;
+Person.prototype.printAge = function(){
+    return this.age
+};
+
+const teo = new Person("Nguyen Van Teo",20)
+
+const ti = new Person("Nguyen Van Ti",22)
+console.log(ti.printAge == teo.printAge)
