@@ -23,3 +23,15 @@
 // }
 
 // console.log(index)
+
+//19 : Function context
+
+const teo = {
+    name : "Nguyen Van Teo",
+    age : 20,
+    showName : function(){
+        console.log(this.name)
+    }
+}
+const coppyFun = teo.showName.bind({name : "Nguyen Van A"})
+coppyFun()
