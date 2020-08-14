@@ -118,14 +118,14 @@
 //     b()
 // }
 
-const teo ={
-    age : 10,
-    name : "Nguyen Van Teo",
-    showName : function(){
-        const b = function(){
-            console.log(this.name)
-        }
-        b()
-    }
-}
-teo.showName()
+// const teo ={
+//     age : 10,
+//     name : "Nguyen Van Teo",
+//     showName : function(){
+//         const b = function(){
+//             console.log(this.name)
+//         }
+//         b()
+//     }
+// }
+// teo.showName()
