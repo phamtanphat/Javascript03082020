@@ -43,27 +43,28 @@
  * Gợi ý: đây là bài tập khó, bạn nên tìm hiểu về recursive trước
  */
 
-// var apartment = {
-//     bedroom: {
-//       area: 20,
-//       bed: {
-//         type: 'twin-bed',
-//         price: 100
-//       }
-//     }
-//   };
-  
-// function getkey(object){
-//     for (const key in object) {
-//         console.log(key)
-//         for(const keyBedRomm in object[key]){
-//             console.log(keyBedRomm)
-//             for(const keyBed in object[key][keyBedRomm]){
-//             console.log(keyBed)
-//             }
-//         }
-//     }
-// }
+var apartment = {
+    bedroom: {
+      area: 20,
+      bed: {
+        type: 'twin-bed',
+        price: 100
+      }
+    }
+  };
+
+function getkey(object) {
+  for (const key in object) {
+    console.log(key)
+    for (const keyBedRomm in object[key]) {
+      console.log(keyBedRomm)
+      for (const keyBed in object[key][keyBedRomm]) {
+        console.log(keyBed)
+      }
+    }
+  }
+}
+
   
 // function getkey(object){
 //     for (const key in object) {
@@ -73,7 +74,8 @@
 //         }
 //     }
 // }
-//   getkey(apartment)
+getkey(apartment);
+
   
   /**
    * Kết quả mong muốn:
