@@ -95,14 +95,18 @@ const teo = {
     age : 10
 }
 const ti = {
-    name : "Ti",
-    age : 15
+    address : "Quan1",
+    country : {
+        name : "HCM"
+    }
 }
-const a = [teo]
-const b = [ti,...a]
+const object = Object.assign(ti,{})
+console.log(object)
+// const a = [teo]
+// const b = [ti,...a]
 
 
-console.log(b)
+// console.log(b)
 
-a[0].name = "Nguyen Van Ti"
-console.log(b)
+// a[0].name = "Nguyen Van Ti"
+// console.log(b)
