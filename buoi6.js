@@ -90,18 +90,18 @@
 // tinhTong(1,2,3,4,5)
 
 // 28 : spread (Dãn ra : như coppy)
-const teo = {
-    name : "Teo",
-    age : 10
-}
-const ti = {
-    address : "Quan1",
-    country : {
-        name : "HCM"
-    }
-}
-const object = Object.assign(ti,{})
-console.log(object)
+// const teo = {
+//     name : "Teo",
+//     age : 10
+// }
+// const ti = {
+//     address : "Quan1",
+//     country : {
+//         name : "HCM"
+//     }
+// }
+// const object = Object.assign(ti,{})
+// console.log(object)
 // const a = [teo]
 // const b = [ti,...a]
 
@@ -110,3 +110,28 @@ console.log(object)
 
 // a[0].name = "Nguyen Van Ti"
 // console.log(b)
+
+// 29 : Destructuring
+
+//Array
+// const arr = [9,3,1,4,6,2,0]
+
+// const index0 = arr[0]
+// const index1 = arr[1]
+// const index2 = arr[2]
+
+// const [index0,index1,index2] = arr
+
+// console.log(index0,index1,index2)
+
+//Object
+const hocsinhteo = {
+    name : "Nguyen Van Teo",
+    age : 10,
+    address : "Quan 1"
+}
+const {name , age ,address} = hocsinhteo
+console.log(name)
+
+
+
