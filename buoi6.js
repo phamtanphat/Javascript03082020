@@ -64,14 +64,45 @@
 
 
 // 25 : Apply
-function sum(){
-    const numbers = Array.from(arguments)
-    return numbers.reduce((sum , num )=> sum + num ,this.value)
-}
-function average(){
-    const x = sum.apply({value : 0},arguments)
-    return x / arguments.length
-}
-console.log(average(1,2,3,6))
+// function sum(){
+//     const numbers = Array.from(arguments)
+//     return numbers.reduce((sum , num )=> sum + num ,this.value)
+// }
+// function average(){
+//     const x = sum.apply({value : 0},arguments)
+//     return x / arguments.length
+// }
+// console.log(average(1,2,3,6))
   
-  
+// 26 : Enhanced object literals
+// function createObject(name , age){
+//     const obj = {name, age}
+//     console.log(obj)
+// }
+// createObject("phat",26)
+
+// 27 : rest (Gop vao)
+// function tinhTong(...nums){
+//     nums.map(value => {
+//         console.log(value)
+//     })
+// }
+// tinhTong(1,2,3,4,5)
+
+// 28 : spread (Dãn ra : như coppy)
+const teo = {
+    name : "Teo",
+    age : 10
+}
+const ti = {
+    name : "Ti",
+    age : 15
+}
+const a = [teo]
+const b = [ti,...a]
+
+
+console.log(b)
+
+a[0].name = "Nguyen Van Ti"
+console.log(b)
