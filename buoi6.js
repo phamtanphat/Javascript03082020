@@ -62,3 +62,16 @@
 // }
 // showInfo.call({age : 20} , "phat")
 
+
+// 25 : Apply
+function sum(){
+    const numbers = Array.from(arguments)
+    return numbers.reduce((sum , num )=> sum + num ,this.value)
+}
+function average(){
+    const x = sum.apply({value : 0},arguments)
+    return x / arguments.length
+}
+console.log(average(1,2,3,6))
+  
+  
