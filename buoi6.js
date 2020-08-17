@@ -56,3 +56,9 @@
   
 // tinhTong(10)
 
+// 24 : Call
+// function showInfo(name){
+//     console.log(name , this.age)
+// }
+// showInfo.call({age : 20} , "phat")
+
